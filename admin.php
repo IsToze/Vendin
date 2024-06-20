@@ -30,15 +30,3 @@ if (!is_connected() || !is_admin())
     <?php require_once "./utils/user-display.php" ?>
 
 </div>
-
-<h1>Dernier post du blog</h1>
-<br>
-
-<?php
-require_once "./utils/blog.php";
-$post = get_last_post();
-
-if (!isset($post['title'])) {
-    echo "<p class='post-not-found'>Aucun post n'a été trouvé</p>";
-    return;
-}
