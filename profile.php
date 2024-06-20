@@ -15,7 +15,7 @@
 require_once "./utils/navbar.php";
 require_once "./utils/database.php";
 
-if(!is_connected()) {
+if (!is_connected()) {
     header("Location: login.php");
     return;
 }

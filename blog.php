@@ -15,7 +15,7 @@
 require_once "./utils/database.php";
 require_once "./utils/blog.php";
 
-if(isset($_POST['title']) && isset($_POST['content'])){
+if (isset($_POST['title']) && isset($_POST['content'])) {
 
     $title = $_POST['title'];
     $content = $_POST['content'];
@@ -29,7 +29,7 @@ if(isset($_POST['title']) && isset($_POST['content'])){
 
 }
 
-if(is_connected() && $_SESSION['fonction'] !== 'user'){
+if (is_connected() && $_SESSION['fonction'] !== 'user') {
     echo "
         <div class='create-post'>
         <form action='blog.php' method='post' class='form'>
@@ -45,7 +45,7 @@ if(is_connected() && $_SESSION['fonction'] !== 'user'){
 
 $posts = get_20_last_posts(1);
 
-foreach ($posts as $post){
+foreach ($posts as $post) {
     echo "
         <div class='post'>
             <h3>{$post['title']}</h3>

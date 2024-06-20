@@ -13,7 +13,7 @@ echo "<div class='categories-nav'>";
 echo "<a href='index.php'><img class='navbar_logo' src='images/logo.png' alt='logo'></a>";
 
 foreach ($categories as $category) {
-    $link_category = strtolower($category).'.php';
+    $link_category = strtolower($category) . '.php';
     echo "<a class=navbar_category href=$link_category>$category</a>";
 }
 
@@ -25,7 +25,7 @@ if (is_connected()) {
     echo "<a class='navbar_category login' href='login.php'>Connexion</a>";
 }
 
-if(is_admin())
+if (is_admin())
     echo "<a class=' navbar_category admin' href='admin.php'>Administration</a>";
 
 echo "</div>";

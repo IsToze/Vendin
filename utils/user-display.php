@@ -13,7 +13,7 @@ if (isset($_POST['role']) && isset($_POST['id'])) {
 
 }
 
-if(isset($_POST['delete-user'])){
+if (isset($_POST['delete-user'])) {
 
     $id = $_POST['delete-user'];
 

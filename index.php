@@ -24,15 +24,15 @@
 <h2>Dernier post du blog</h2>
 
 <?php
-    require_once "./utils/blog.php";
-    $post = get_last_post();
+require_once "./utils/blog.php";
+$post = get_last_post();
 
-    if(!isset($post['title'])){
-        echo "<br><p class='post-not-found'>Aucun post n'a été trouvé</p>";
-        return;
-    }
+if (!isset($post['title'])) {
+    echo "<br><p class='post-not-found'>Aucun post n'a été trouvé</p>";
+    return;
+}
 
-    echo "
+echo "
 
         <br>    
 

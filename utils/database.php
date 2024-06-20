@@ -109,7 +109,8 @@ function create_user($lastname, $firstname, $email, $password): string
 
 }
 
-function admin_exist(): bool{
+function admin_exist(): bool
+{
 
     global $pdo;
 
@@ -120,7 +121,8 @@ function admin_exist(): bool{
 
 }
 
-function user_exists($email): bool{
+function user_exists($email): bool
+{
 
     global $pdo;
 
@@ -131,7 +133,8 @@ function user_exists($email): bool{
 
 }
 
-function get_all_users(){
+function get_all_users()
+{
 
     global $pdo;
 
@@ -142,7 +145,8 @@ function get_all_users(){
 
 }
 
-function change_role($id, $role){
+function change_role($id, $role)
+{
 
     global $pdo;
 
@@ -151,7 +155,8 @@ function change_role($id, $role){
 
 }
 
-function delete_user($id){
+function delete_user($id)
+{
 
     global $pdo;
 
@@ -160,7 +165,8 @@ function delete_user($id){
 
 }
 
-function disconnect(){
+function disconnect()
+{
     session_start();
     unset($_SESSION['id']);
     unset($_SESSION['lastname']);

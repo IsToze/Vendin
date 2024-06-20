@@ -18,7 +18,8 @@ function create_post($title, $content, $image_link, $author): bool
 
 }
 
-function get_20_last_posts($page){
+function get_20_last_posts($page)
+{
 
     global $pdo;
 
@@ -31,7 +32,8 @@ function get_20_last_posts($page){
 
 }
 
-function get_last_post(){
+function get_last_post()
+{
 
     global $pdo;
 
