@@ -1,0 +1,19 @@
+Comment utiliser le site internet :
+
+Une fois avoir mit en place le site internet,
+il vous faut créer un compte Administrateur (1 seul à la création possible)
+
+Allez dans l'onglet "s'inscrire" et mettez dans nom et prénom : "admin"
+Allez dans "Administration" avec le compte admin et changez le rôle de chaque utilisateur.
+Tous les utilisateurs ayant un rang différent de "user" pourront créer des articles de blog dans l'onglet "blog".
+Le dernier post apparaît dans la page principale et dans la liste des articles de la page "blog".
+La page blog montre les articles du plus récent au plus vieux (et en montre 20)
+
+Il y a 5 onglet :
+
+- Accueil : Page principale qui contient une image et le dernier article du blog.
+- Blog qui contient les 20 derniers articles du blog.
+- Contact qui affiche la liste des numéros des différents services.
+- S'inscrire pour créer un compte.
+- Connexion pour accéder à son compte.
+- Administration pour supprimer un compte / Mettre un rôle à un utilisateur.
