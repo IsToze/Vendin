@@ -1,0 +1,17 @@
+.left-container {
+  width: 30%;
+  float: left;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-right: 10px solid rgba(255, 0, 0, 0.3);
+  padding: 20px 20px 100vh;
+}
+
+.right-informations {
+  margin-left: calc(30% + 30px);
+  margin-top: 20px;
+}
+.right-informations h1 {
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=profile.css.map */

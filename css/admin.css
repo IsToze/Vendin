@@ -1,0 +1,94 @@
+.left-choice {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(67, 164, 34, 0.53);
+}
+.left-choice a {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.red-margin {
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  width: 0.5%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.73);
+}
+
+h1 {
+  color: #855413;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.users {
+  position: fixed;
+  top: 100px;
+  left: 30.5%;
+  width: 69.5%;
+  height: 100%;
+  background-color: rgba(63, 236, 4, 0.47);
+}
+.users h2 {
+  color: #855413;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+.users table {
+  width: 30%;
+  border-collapse: collapse;
+  margin: 10px 0 0 20%;
+  border: 2px solid black;
+}
+.users table button {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  margin: 3px 0;
+  border: none;
+  cursor: pointer;
+}
+.users th, .users td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.users .role {
+  color: red;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .users table {
+    margin: 10px 0 0 0;
+    width: 10%;
+    left: 10%;
+  }
+  .users table th, .users table td {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 8px;
+    text-align: center;
+  }
+  .users table button {
+    background-color: gray;
+    color: white;
+    padding: 2px;
+    margin: 1px 0;
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.create-post {
+
+  margin: 0 auto;
+  background-color: rgba(133, 84, 19, 0.8);
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 30%;
+  width: 40%;
+  height: 400px;
+
+  form {
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      vertical-align: center;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  textarea {
+    height: 200px;
+    resize: none;
+    padding-left: 2px;
+  }
+
+}
+
+.post {
+
+  margin: 0 auto;
+  background-color: rgba(133, 84, 19, 0.8);
+  border: 2px solid black;
+  border-radius: 8px;
+  left: 30%;
+  width: 40%;
+
+  h3 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+    resize: none;
+    height: auto;
+    min-height: 100px;
+    background-color: rgba(234, 234, 234, 0.8);
+  }
+
+  .post-content {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}

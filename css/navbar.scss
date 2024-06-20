@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar_logo {
+
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+}
+
+.categories-nav {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: rgba(0, 111, 255, 0.05);
+
+  margin-top: 20px;
+  margin-left: 120px;
+
+  .navbar_category {
+
+    color: #59CD97;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+
+    &:hover {
+      border-radius: 10px;
+      background-color: rgba(140, 236, 160, 0.3);
+    }
+
+  }
+
+  .register {
+
+    color: black;
+    padding: 5px;
+    background-color: rgba(12, 87, 238, 0.85);
+
+    border: 1px solid black;
+    border-radius: 1px;
+
+    &:hover {
+      border-radius: 1px;
+      background-color: rgba(12, 87, 238, 0.85);
+    }
+
+  }
+
+  .admin {
+
+    color: red;
+    padding: 8px;
+
+    border-radius: 10px;
+    font-weight: bold;
+
+    &:hover {
+      border-radius: 10px;
+      background-color: rgba(255, 0, 0, 0.2);
+    }
+
+  }
+
+  .login {
+    color: darkorchid;
+  }
+
+}
+
+.navbar_separator {
+  margin-top: 10px;
+}

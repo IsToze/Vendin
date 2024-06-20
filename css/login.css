@@ -1,0 +1,71 @@
+.img_login {
+  height: 800px;
+  width: max(100vh, 100vw);
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.register_container {
+  position: absolute;
+  margin: 0 auto;
+  left: calc(50% - 200px);
+  top: 120px;
+  width: 400px;
+  height: 365px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 3px solid white;
+  z-index: 5;
+}
+.register_container h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.register_container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.register_container form label {
+  padding-top: 25px;
+  font-weight: bold;
+}
+.register_container form input {
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.register_container form button {
+  width: 350px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 15px;
+  background-color: #4CAF50;
+  color: white;
+}
+.register_container form button:hover {
+  background-color: #45a049;
+}
+.register_container form .response {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#response {
+  text-align: center;
+  width: 400px;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=login.css.map */
