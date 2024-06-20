@@ -12,8 +12,8 @@ $sql = "CREATE TABLE IF NOT EXISTS vendin_users (
     firstname VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    fonction VARCHAR(255) NOT NULL DEFAULT 'user'
+    fonction VARCHAR(255) NOT NULL DEFAULT 'user',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
 
 $pdo->exec($sql);
@@ -24,6 +24,7 @@ $sql = "CREATE TABLE IF NOT EXISTS vendin_blog (
     content TEXT NOT NULL,
     image_link VARCHAR(255) NOT NULL,
     author VARCHAR(255) NOT NULL,
+    fonction VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
 

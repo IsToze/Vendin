@@ -2,17 +2,17 @@
 
 require_once "database.php";
 
-function create_post($title, $content, $image_link, $author): bool
+function create_post($title, $content, $image_link, $fonction, $author): bool
 {
-
     global $pdo;
-    $sql = "INSERT INTO vendin_blog (title, content, image_link, author) VALUES (:title, :content, :image_link, :author)";
+    $sql = "INSERT INTO vendin_blog (title, content, image_link, fonction, author) VALUES (:title, :content, :image_link, :fonction, :author)";
     $query = $pdo->prepare($sql);
 
     return $query->execute([
         'title' => $title,
         'content' => $content,
         'image_link' => $image_link,
+        'fonction' => $fonction,
         'author' => $author
     ]);
 

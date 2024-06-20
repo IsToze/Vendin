@@ -40,7 +40,7 @@ echo "
             <h3>{$post['title']}</h3>
             <textarea class='content'>{$post['content']}</textarea>
             <img src='{$post['image_link']}' alt=''>
-            <p>Posté le {$post['created_at']} par {$post['author']}</p>
+           <p>Posté le {$post['created_at']} par {$post['author']}, {$post['fonction']}</p>
         </div>
         
         <br>

@@ -17,3 +17,11 @@ Il y a 5 onglet :
 - S'inscrire pour créer un compte.
 - Connexion pour accéder à son compte.
 - Administration pour supprimer un compte / Mettre un rôle à un utilisateur.
+
+Informations de la base de données :
+
+$user = 'p9D9b38pupy79bvGUD23Kk888B95354q';
+$password = '7E2qBfe6dG4y65J2jbGLCPcE7u7d8a3gJHcy9K7S6VuJN92k2L4c76uRCaYwwU89';
+$table = 'vendin_site';
+$ip = 'localhost';
+$pdo = new PDO("mysql:host=$ip;dbname=$table", $user, $password);

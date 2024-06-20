@@ -20,12 +20,13 @@ if (isset($_POST['title']) && isset($_POST['content'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];
     $image_link = "";
+    $fonction = $_SESSION['fonction'];
     $author = $_SESSION['full_name'];
 
     unset($_POST['title']);
     unset($_POST['content']);
 
-    create_post($title, $content, $image_link, $author);
+    create_post($title, $content, $image_link, $fonction, $author);
 
 }
 
@@ -52,7 +53,7 @@ foreach ($posts as $post) {
             <div class='post-content'>
                 <textarea class='content'>{$post['content']}</textarea>
                 <img src='{$post['image_link']}' alt=''>
-                <p>Posté le {$post['created_at']} par {$post['author']}</p>
+                <p>Posté le {$post['created_at']} par {$post['author']}, {$post['fonction']}</p>
             </div>
             <br>
         </div>
