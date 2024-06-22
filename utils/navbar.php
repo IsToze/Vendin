@@ -6,7 +6,7 @@ require_once './utils/database.php';
 
 session_start();
 
-$categories = ["Accueil", "Blog", "Contact"];
+$categories = ["Accueil", "Actualite", "Contact"];
 
 echo "<div class='categories-nav'>";
 

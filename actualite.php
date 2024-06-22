@@ -33,7 +33,7 @@ if (isset($_POST['title']) && isset($_POST['content'])) {
 if (is_connected() && $_SESSION['fonction'] !== 'user') {
     echo "
         <div class='create-post'>
-        <form action='blog.php' method='post' class='form'>
+        <form action='actualite.php' method='post' class='form'>
             <h1>Créer un article</h1>
             <input type='text' name='title' placeholder='Titre' required>
             <textarea name='content' placeholder='Contenu' required></textarea>
